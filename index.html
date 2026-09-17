@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kpop Album Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-background"></div>
+    <div class="container">
+        <header>
+            <h1 class="gradient-text">🎵 Kpop Album Store</h1>
+            <p class="subtitle">Khám phá và sở hữu những album hot nhất</p>
+        </header>
+        
+        <!-- Khu vực hiển thị danh sách sản phẩm -->
+        <div id="product-list" class="catalog">
+            <!-- Sản phẩm sẽ được render bằng JS vào đây -->
+        </div>
+
+        <!-- Khu vực giỏ hàng -->
+        <div class="cart-section">
+            <h2>🛒 Giỏ hàng của bạn</h2>
+            <ul id="cart-items">
+                <!-- Danh sách item trong giỏ -->
+            </ul>
+            <div class="cart-summary">
+                <p>Tổng tiền: <strong id="total-price">0 VNĐ</strong></p>
+                <button id="checkout-btn" class="btn-primary">Đặt hàng ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container" class="toast-container"></div>
+    
+    <!-- Modal Thông Báo -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon">🎉</div>
+            <h2>Đặt hàng thành công!</h2>
+            <p id="modal-message">Cảm ơn bạn đã mua Album.</p>
+            <button id="modal-close-btn" class="btn-primary">Tiếp tục mua sắm</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
